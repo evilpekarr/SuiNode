@@ -3,7 +3,7 @@ how to install Sui node
 
 Install 
 
-# Installation takes more than 15 minutes, it is recommended to run in a screen session:
+ Installation takes more than 15 minutes, it is recommended to run in a screen session:
 
 ```screen -S sui```
 
@@ -15,19 +15,19 @@ Install
 
 ```curl -s -X POST http://127.0.0.1:9000 -H 'Content-Type: application/json' -d '{ "jsonrpc":"2.0", "method":"rpc.discover","id":1}' | jq .result.info```
 
-# Check node logs:
+ Check node logs:
 
 ```journalctl -u suid -f -o cat```
 
-# Restart node:
+ Restart node:
 
 ```sudo systemctl restart suid```
 
-# Stop node:
+ Stop node:
 
 ```sudo systemctl stop suid```
 
-# Delete node:
+ Delete node:
 
 ```sudo systemctl stop suid
 sudo systemctl disable suid
