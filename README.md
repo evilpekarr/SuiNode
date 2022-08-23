@@ -34,3 +34,11 @@ sudo systemctl disable suid
 rm -rf ~/sui /var/sui/ /usr/local/bin/sui*
 rm /etc/systemd/system/suid.service
 ```
+
+Network Update 
+
+```systemctl stop suid```
+
+```rm -rf /var/sui/db/*```
+
+```systemctl restart suid```
